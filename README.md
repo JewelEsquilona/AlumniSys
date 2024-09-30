@@ -1,4 +1,9 @@
 //Database Creation
+
+
+
+
+
 CREATE TABLE `2024_2025` (
     `ID` INT AUTO_INCREMENT,                      -- Auto-incrementing ID
     `Alumni_ID_Number` VARCHAR(20),               -- Primary key
