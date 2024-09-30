@@ -96,6 +96,33 @@ DELIMITER ;
 
 
 
+INSERT INTO `2024-2025` (
+    Alumni_ID_Number, 
+    Student_Number, 
+    Last_Name, 
+    First_Name, 
+    Middle_Name, 
+    College, 
+    Department, 
+    Section, 
+    Year_Graduated, 
+    Contact_Number, 
+    Personal_Email
+) VALUES (
+    '00001',  -- Alumni_ID_Number (trigger will generate new one in the future)
+    '21239011',  -- Student number
+    'Doe',  -- Last name
+    'John',  -- First name
+    'Ares',  -- Middle name (optional)
+    'CITCS',  -- College
+    'CS',  -- Department
+    'CS4A',  -- Section
+    2023,  -- Year Graduated
+    '09171234567',  -- Contact number
+    'john.doe@example.com'  -- Personal email
+);
+
+
 
 
 
