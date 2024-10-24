@@ -96,8 +96,8 @@ DELIMITER ;
 
 
 
-INSERT INTO `2024-2025` (
-    Alumni_ID_Number, 
+INSERT INTO `2024-2025` 
+( 
     Student_Number, 
     Last_Name, 
     First_Name, 
@@ -107,9 +107,10 @@ INSERT INTO `2024-2025` (
     Section, 
     Year_Graduated, 
     Contact_Number, 
-    Personal_Email
-) VALUES (
-    '00001',  -- Alumni_ID_Number (trigger will generate new one in the future)
+    Personal_Email 
+) 
+VALUES 
+( 
     '21239011',  -- Student number
     'Doe',  -- Last name
     'John',  -- First name
