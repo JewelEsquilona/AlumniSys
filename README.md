@@ -67,10 +67,10 @@ CREATE TRIGGER after_insert_2024_2025
 AFTER INSERT ON `2024-2025` 
 FOR EACH ROW 
 BEGIN
-    -- Insert a new record into 2024-2025_ED with the new Alumni_ID_Number and default Working_Status as NULL
+    -- Insert a new record into 2024-2025_ED with the new Alumni_ID_Number and default values
     INSERT INTO `2024-2025_ED` (
         Alumni_ID_Number, 
-        Working_Status, 
+        Employment, 
         Employment_Status, 
         Present_Occupation, 
         Name_of_Employer, 
@@ -81,14 +81,14 @@ BEGIN
     ) 
     VALUES (
         NEW.Alumni_ID_Number, 
-        NULL,  -- Default Working_Status
-        NULL,  -- Default Employment_Status
-        NULL,  -- Default Present_Occupation
-        NULL,  -- Default Name_of_Employer
-        NULL,  -- Default Address_of_Employer
-        NULL,  -- Default Number_of_Years_in_Present_Employer
-        NULL,  -- Default Type_of_Employer
-        NULL   -- Default Major_Line_of_Business
+        NULL,  -- Default Employment (was Working_Status)
+        NULL, 
+        NULL, 
+        NULL, 
+        NULL, 
+        NULL, 
+        NULL, 
+        NULL
     );
 END $$
 
